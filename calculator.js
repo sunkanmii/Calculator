@@ -16,14 +16,23 @@ let mul_vals = document.getElementById("mul");
 let div_vals = document.getElementById("divide");
 let equ_vals = document.getElementById("equ");
 let output_vals = document.getElementById("output");
+let output_valsTxt = output_vals.value;
 
-function AddValTxtbox(){
+function AddValTxtbox(id){
+    console.log(output_valsTxt)
     
-    if(output_vals.value !== "0"){
-        output_vals.value += button.value ;
+    output_valsTxt = output_vals.value;
+
+    console.log(typeof(output_valsTxt))
+
+    
+    if(Number(output_valsTxt) !== 0){
+    
+        output_vals.value = output_vals.value + Number(document.getElementById(id).innerHTML);
     }
+
     else{
-        output_vals.value = window.button.value;
+        output_vals.value = document.getElementById(id).innerHTML;
     }
 
 }
