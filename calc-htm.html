@@ -11,12 +11,12 @@
 
     <section id="calcutor-body">
         <div class="calc-layer-1">
-            <input type="number" id = "output" value = 0>
+            <input type="number" id = "output" placeholder="" value = 0>
             
             <div class="calc-layer-2">
 
-                <button id = "clr">Clear</button>
-                <button id = "del">Del</button>
+                <button id = "clr" onclick="clearField()">Clear</button>
+                <button id = "del" onclick="deleteField()">Del</button>
                 <button id = "num1" onclick="AddValTxtbox('num1')">1</button>
                 <button id = "num2" onclick="AddValTxtbox('num2')">2</button>
                 <button id = "num3" onclick="AddValTxtbox('num3')">3</button>
@@ -27,11 +27,11 @@
                 <button id = "num8" onclick="AddValTxtbox('num8')">8</button>
                 <button id = "num9" onclick="AddValTxtbox('num9')">9</button>
                 <button id = "num0" onclick="AddValTxtbox('num0')">0</button>
-                <button id = "plus">+</button>
+                <button id = "plus" onclick="addNums()">+</button>
                 <button id = "minus">-</button>
-                <button id = "mul">X</button>
+                <button id = "mul" onclick="test()">X</button>
                 <button id = "divide">&divide;</button>
-                <button id = "equ">=</button>
+                <button id = "equ" onclick="equalTo()">=</button>
 
             </div>
         </div>
