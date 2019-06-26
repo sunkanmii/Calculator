@@ -4,7 +4,7 @@
 #calculator-body{
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 650px;
     justify-content: center;
     align-items: center;
 }
@@ -12,6 +12,9 @@
     display: grid;
     grid-template-columns: auto;
     grid-gap: 10px;
+}
+#calculator-body .calc-layer-1 p{
+    color: red;
 }
 #calculator-body .calc-layer-1 .calc-layer-2{
     display: grid;

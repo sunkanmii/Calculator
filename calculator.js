@@ -29,9 +29,11 @@ function clearField() {
     i = 0; 
     j = 1;
     addButton = 0, subButton = 0, mulButton = 0, divButton = 0;
+    err_message.innerText = "";
 }
 
 function deleteField() {
+    err_message.innerText = "";
     
     for (; i < j; i++) {   
         nums[i] = output_vals.value.split("");
